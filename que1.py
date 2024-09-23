@@ -136,3 +136,36 @@ if __name__ == "__main__":
     while not person_heap.is_empty():
         print(f"pop_root: {person_heap.pop_root()}")
     print(f"Is heap now empty? {person_heap.is_empty()}")
+
+"""
+Integer MinHeap:
+After build_min_heap: [1, 3, 5, 4, 8, 7]
+After insert 2: [1, 3, 2, 4, 8, 7, 5]
+pop_root: 1
+After pop_root: [2, 3, 5, 4, 8, 7]
+Is heap empty? False
+Heap size: 6
+peek: 2
+
+Float MinHeap:
+Initial heap: [1.2, 3.1, 5.4, 4.5, 8.9, 7.8]
+After insert 2.7: [1.2, 3.1, 2.7, 4.5, 8.9, 7.8, 5.4]
+pop_root: 1.2
+Heap after pop_root: [2.7, 3.1, 5.4, 4.5, 8.9, 7.8]
+
+Custom Object MinHeap (by age):
+Initial heap: [Person(Sravya, 20), Person(Nandu, 25), Person(Bhavya, 35), Person(Sreya, 30)]
+After insert Ravi: [Person(Sravya, 20), Person(Nandu, 25), Person(Bhavya, 35), Person(Sreya, 30), Person(Ravi, 28)]
+pop_root: Person(Sravya, 20)
+Heap after pop_root: [Person(Nandu, 25), Person(Ravi, 28), Person(Bhavya, 35), Person(Sreya, 30)]
+Is heap empty? False
+Heap size: 4
+peek: Person(Nandu, 25)
+
+Emptying the heap:
+pop_root: Person(Nandu, 25)
+pop_root: Person(Ravi, 28)
+pop_root: Person(Sreya, 30)
+pop_root: Person(Bhavya, 35)
+Is heap now empty? True
+"""
